@@ -1,0 +1,140 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://nlagstage.in/Nlag_stage/Dashboard/login.php')
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Login/input_Sign In_email'), 'nlag@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Church/Page_Nlag  Login/input_Sign In_password'), 'tzH6RvlfSTg=')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Login/button_Sign In'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Home Screen/img_Logout_home_logo'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Create'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Create_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input_Create Church_name'), 'Peace AG Church')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Create_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__address'), 'no.1, gandhi nagar, palavakkam, chennai - 600041')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Create_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__mobile'), '0987654321')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Create_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__email'), 'nlag@gmail.com')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/span_Select church area'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/li_Santhome 600004'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/span_Select Language'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/li_Tamil'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Create_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Update'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/td_no1 gandhi nagar palavakkam chennai - 600041'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Update'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/div_Church Name'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input_Update Church_name1'), '')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Update_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input_Update Church_name1'), 'Peace AG Church')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/div_Update ChurchChurch Name Church Address_3e6ebe'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__address1'), '')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Update_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__address1'), 'no.1, gandhi nagar, palavakkam, chennai - 600041')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/div_Update ChurchChurch Name Church Address_3e6ebe'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__mobile1'), '')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Update_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__mobile1'), '987654321')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/div_MobileEmail'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__email1'), '')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/body_LogoutChurchRole StructurePastor to Ro_f5e047'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__email1'), 'nlag@gmail.com')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Update_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.setText(findTestObject('Object Repository/Church/Page_Nlag  Church/input__mobile1'), '9876543210')
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Update_1'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Delete'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/td_no1 gandhi nagar palavakkam chennai - 600041'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Delete'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_Yes delete it'))
+
+WebUI.click(findTestObject('Object Repository/Church/Page_Nlag  Church/button_OK'))
+
+WebUI.closeBrowser()
+
