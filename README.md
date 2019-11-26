@@ -1,2 +1,2 @@
 # NLAG-DEV
-This Repository is to for Testing NLAG project
+This Repository is for Testing NLAG project
